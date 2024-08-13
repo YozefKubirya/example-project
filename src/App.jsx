@@ -34,6 +34,6 @@ function App() {
 }
 export const MyComponent= ()=>{
   return <>
-  heloo my component</>
+  heloo my component,my name is yozef im from ukraine</>
 }
 export default App
