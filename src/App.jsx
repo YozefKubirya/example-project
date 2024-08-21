@@ -2,9 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import LoginForm from './assets/components/LoginForm/LoginForm'
+import SearchBar from './assets/components/SearchBar/SearchBar'
+import LangSwitcher from './assets/components/LangSwitcher/LangSwitcher'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const [selectValue,setSelectedValue]=useState('uk');
+  const handleLogin=({login,password})=>{
+console.log(`userData :${login}, ${password}`)
+  }
 
   return (
     <>
@@ -29,6 +36,10 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <LoginForm onLogin={handleLogin}/>
+      <SearchBar/>
+      <p> Language:{selectValue} </p>
+      <LangSwitcher value={selectValue} onSelect={setSelectedValue}/>
     </>
   )
 }
