@@ -1,0 +1,7 @@
+.textContainer{
+   display: flex;
+   justify-content: center;
+}
+.taskText{
+   margin-right: 50px;
+}

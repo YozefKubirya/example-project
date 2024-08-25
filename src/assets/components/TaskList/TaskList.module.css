@@ -1,0 +1,11 @@
+.taskList{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.taskContainer{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border: 2px solid #a99bc6;
+   border-radius: 5px;
+}
